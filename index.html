@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     />
+      <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/fontello-ie7.css">
   </head>
   <body>
   <div class="lang-bar">
@@ -38,13 +40,13 @@
       <section class="row">
             <article class="box">
               <article class="arc">
-                <img class="icon3" alt="" src="./public/iconlylightoutlinegraph.svg" />
+                  <i class="icon3 demo-icon icon-star-empty">&#xe801;</i>
               </article>
               <p>Удобный пользовательский интерфейс</p>
             </article>
             <article class="box">
               <article class="arc">
-                <img class="icon3"  alt="" src="./public/iconlylightoutlineactivity.svg" />
+                  <i class="demo-icon icon-chart-outline icon3">&#xe802;</i>
               </article>
               <p>Панель администратора для ведения учета </p>
             </article>
@@ -52,13 +54,13 @@
           <section class="row">
               <article class="box">
               <article class="arc">
-                <img class="icon3" alt="" src="./public/iconlylightoutlinefilter.svg" />
+                <i class="demo-icon icon-sliders icon3">&#xf1de;</i>
               </article>
               <p>Простая и быстрая интеграция</p>
             </article>
               <article class="box">
               <article class="arc">
-                <img class="icon3" alt="" src="./public/iconlylightoutlinesetting.svg" />
+                <i class="demo-icon icon-cog icon3">&#xe803;</i>
               </article>
               <p>Гибкая масштабируемая система</p>
             </article>
@@ -74,6 +76,7 @@
             <p><strong>Платформа для автоследования</strong> <br> Копирование стратегий в автономном режиме</p>
             <div class="image-container">
                 <img class="icon4" src="./public/risk-level-3@2x.png" />
+
             </div>
         </article>
         <article class="box_info">
@@ -100,13 +103,13 @@
           <section class="row down">
             <article class="box box_down">
               <article class="arc arc_down">
-                <img class="icon3 icon_down" alt="" src="./public/--7.svg" />
+                  <i class="demo-icon icon-money icon3 icon_down">&#xf0d6;</i>
               </article>
               <p>Эĸономим время и деньги на запусĸ digital сервисов</p>
             </article>
             <article class="box box_down">
               <article class="arc arc_down">
-                <img class="icon3 icon_down"  alt="" src="./public/--3.svg" />
+                <i class="demo-icon icon-exchange icon3 icon_down">&#xf0ec;</i>
               </article>
               <p>Создаем канал привлечения новых клиентов</p>
             </article>
@@ -114,13 +117,13 @@
           <section class="row down">
               <article class="box box_down">
               <article class="arc arc_down">
-                <img class="icon3 icon_down" alt="" src="./public/--5.svg" />
+                <i class="demo-icon icon-user-outline icon3 icon_down">&#xe804;</i>
               </article>
               <p>Помогаем увеличить выручку путем запуска нового продукта</p>
             </article>
               <article class="box box_down">
               <article class="arc arc_down">
-                <img class="icon3 icon_down" alt="" src="./public/--4.svg" />
+                <i class="demo-icon icon-user icon3 icon_down">&#xe805;</i>
               </article>
               <p>Повышаем лояльность действующих клиентов</p>
             </article>
@@ -129,4 +132,25 @@
     </section>
     </div>
   </body>
+    <script>
+      var langOptions = document.getElementsByClassName('lang-option');
+
+  // Добавляем обработчик события клика для каждой опции языка
+  for (var i = 0; i < langOptions.length; i++) {
+    langOptions[i].addEventListener('click', function() {
+      var selectedLang = this.id;
+
+      // Прокручиваем выбранную опцию в видимую область
+      this.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'start'
+      });
+
+      // Выполните здесь другие действия, связанные с изменением языка
+      // Например, установите выбранный язык в cookie или выполните перевод страницы
+      console.log('Выбран язык:', selectedLang);
+    });
+  }
+    </script>
 </html>
