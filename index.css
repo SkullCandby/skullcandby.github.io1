@@ -413,7 +413,7 @@ h2 {
       font-weight: 400;
       font-size: 22px;
       line-height: 130%;
-      background-image: linear-gradient(#CBECFF 40%, #ffffff 0%);
+      background-image: linear-gradient(#CBECFF 35%, #ffffff 0%);
     }
     .sec {
         display: flex;
